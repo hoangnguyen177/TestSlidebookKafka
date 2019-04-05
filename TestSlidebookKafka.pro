@@ -10,20 +10,10 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    capturedataframe.cpp \
-    slidebook.cpp \
-    largemessagesegment.cpp \
-    segmentserializer.cpp
+SOURCES += main.cpp
 
 INCLUDEPATH += /usr/local/include
-LIBS += -L/usr/local/lib/ -lrdkafka++ -lSlideBook6Reader -ljsoncpp -lfmt
-
-HEADERS += \
-    capturedataframe.h \
-    slidebook.h \
-    largemessagesegment.h \
-    segmentserializer.h
+LIBS += -L/usr/local/lib/ -lrdkafka++ -lSlideBook6Reader -ljsoncpp
 
 DISTFILES += \
     README.txt
